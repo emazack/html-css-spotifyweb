@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-flex{
+  display: flex;
+  height: 100vh;
+}
+
+/* DEBUG:  */
+aside{
+  background-color: black;
+  width: calc(100% - 80vw);
+}
+
+main{
+  background-color: darkblue;
+  width: 100vw;
+}
+
+section{
+  position: fixed;
+  bottom: 0;
+  background-color: darkgrey;
+  height: calc(100vh - 90vh);
+  width: 100%;
+}
+/* DEBUG:  */
