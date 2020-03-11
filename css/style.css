@@ -13,10 +13,24 @@
   max-width: 20%
 }
 
-.rowcenter{
+.rowbar{
   display: flex;
   justify-content: space-around;
   padding: 10px 90px 10px 90px;
+}
+
+.rowalbum{
+  display: flex;
+}
+
+.columnalbum{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagealbum{
+  max-width: 80%;
 }
 
 /************************************ ASIDE ***********************************/
