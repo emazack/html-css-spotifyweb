@@ -10,16 +10,34 @@
 }
 
 /* DEBUG:  */
+
+/************************************ ASIDE ***********************************/
 aside{
   background-color: black;
   width: calc(100% - 80vw);
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
+ul li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul li img{
+  margin: 5px 5px 5px 15px;
+  max-width: 20%
+}
+
+/********************************** MAIN *************************************/
 main{
   background-color: darkblue;
   width: 100vw;
 }
 
+/************************************ SECTION *********************************/
 section{
   position: fixed;
   bottom: 0;
