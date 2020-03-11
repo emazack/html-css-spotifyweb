@@ -9,15 +9,20 @@
   height: 100vh;
 }
 
-/* DEBUG:  */
+.asideimage {
+  max-width: 20%
+}
 
+/* <img src="img/download.svg" alt=""><span>Installa app</span> */
 /************************************ ASIDE ***********************************/
 aside{
   background-color: black;
   width: calc(100% - 80vw);
+  height: 90vh;
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 ul li{
@@ -27,8 +32,16 @@ ul li{
 }
 
 ul li img{
-  margin: 5px 5px 5px 15px;
-  max-width: 20%
+  max-width: 20%;
+}
+
+#creaplay{
+  display: flex;
+  align-items: center;
+}
+
+#creaplay img{
+  max-width: 150%;
 }
 
 /********************************** MAIN *************************************/
@@ -45,4 +58,3 @@ section{
   height: calc(100vh - 90vh);
   width: 100%;
 }
-/* DEBUG:  */
