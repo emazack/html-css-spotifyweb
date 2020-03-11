@@ -26,11 +26,12 @@
 .columnalbum{
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
 .imagealbum{
-  max-width: 80%;
+  width: 100px;
 }
 
 /************************************ ASIDE ***********************************/
