@@ -13,7 +13,12 @@
   max-width: 20%
 }
 
-/* <img src="img/download.svg" alt=""><span>Installa app</span> */
+.rowcenter{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 90px 10px 90px;
+}
+
 /************************************ ASIDE ***********************************/
 aside{
   background-color: black;
@@ -46,9 +51,18 @@ ul li img{
 
 /********************************** MAIN *************************************/
 main{
-  background-color: darkblue;
+  background-color: lightgrey;
   width: 100vw;
 }
+
+#upgrade{
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid red;
+}
+
+
+
 
 /************************************ SECTION *********************************/
 section{
