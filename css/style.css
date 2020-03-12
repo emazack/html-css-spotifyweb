@@ -1,28 +1,54 @@
+/* regole pagina generali */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* contenitore generale */
 .container-flex{
   display: flex;
   height: 100vh;
 }
 
+/* side bar nera a sinistra */
 .asideimage {
   max-width: 20%
 }
 
+/* riga nav centrale della pagina main */
 .rowbar{
   display: flex;
   justify-content: space-around;
   padding: 10px 90px 10px 90px;
 }
 
+/* disporre elementi in flex row */
 .rowalbum{
   display: flex;
 }
 
+/* disporre elementi in column flex-start */
+.columnflex{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* disporre elementi in column flex-center */
+.columncenter{
+  display: flex;
+  flex-direction: column;
+}
+
+/* disporre gli elementi al centro */
+.centerflex{
+  display: flex;
+  justify-content: center;
+}
+
+/* colonna degli album */
 .columnalbum{
   display: flex;
   align-items: center;
@@ -30,8 +56,15 @@
   flex-direction: column;
 }
 
+/* immagini degli album */
 .imagealbum{
   width: 100px;
+}
+
+/* DEBUG:  */
+.prova{
+  border: 2px solid red;
+  width: 100%;
 }
 
 /************************************ ASIDE ***********************************/
@@ -76,9 +109,6 @@ main{
   border: 2px solid red;
 }
 
-
-
-
 /************************************ SECTION *********************************/
 section{
   position: fixed;
@@ -86,4 +116,7 @@ section{
   background-color: darkgrey;
   height: calc(100vh - 90vh);
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
