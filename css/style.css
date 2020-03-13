@@ -152,10 +152,15 @@ h6, p{
   }
 
   /* riga nav centrale della pagina main */
-  .rowbar{
+  #rowbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 10px 90px 10px 90px;
+    flex-wrap: wrap;
+  }
+
+  #rowbar h6{
+    margin: 15px;
   }
 
   /* riga dove sono presenti gli album */
@@ -166,7 +171,8 @@ h6, p{
 
   /* immagini degli album */
   .imagealbum{
-    max-width: 150px;
+    max-width: 200px;
+
   }
 
   /* colonna degli album */
@@ -345,10 +351,15 @@ h6, p{
   }
 
   /* riga nav centrale della pagina main */
-  .rowbar{
+  #rowbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 10px 90px 10px 90px;
+    flex-wrap: wrap;
+  }
+
+  #rowbar h6{
+    margin: 15px;
   }
 
   /* riga dove sono presenti gli album */
