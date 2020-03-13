@@ -28,189 +28,393 @@ h6, p{
   height: 100vh;
 }
 
+/**********************************************************versione desktop*********************************************************************************/
 
-/* Classi o sezioni specifiche *****************************************/
+@media all and (min-width: 992px){
+  /* Classi o sezioni specifiche *****************************************/
 
+  /* disporre elementi in flex row */
+  .rowflex{
+    display: flex;
+  }
 
+  /* disporre elementi in column flex-start */
+  .columnflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-/* disporre elementi in flex row */
-.rowflex{
-  display: flex;
+  /* disporre elementi in column flex-center */
+  .columncenter{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* disporre gli elementi al centro */
+  .centerflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* baseline flex */
+
+  .baselineflex{
+    align-items: baseline;
+  }
+
+  /* DEBUG:  */
+  .prova{
+    border: 2px solid red;
+  }
+
+  /************************************ ASIDE ***********************************/
+  aside{
+    background-color: black;
+    width: 250px;
+    padding: 25px;
+    height: 90vh;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  /* immagine del logo */
+
+  .imagelogo{
+    width: 145px;
+    padding-bottom: 10px;
+  }
+
+  ul li img{
+    width: 35px;
+    padding-right: 7px;
+  }
+
+  #titoloplaylist{
+    margin: 15px 0 15px 0;
+  }
+
+  #creaplay{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .pulsantecrea{
+    width: 37px;
+    height: 37px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 35px;
+    text-align: center;
+    line-height: 37px;
+    color: black;
+  }
+
+  #installapp{
+    border-bottom: 1px solid;
+  }
+
+  /********************************** MAIN *************************************/
+  main{
+    background: #141922;
+    width: 100vw;
+    overflow: scroll;
+  }
+
+  #upgrade{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: calc(100% - 250px);
+    height: calc(100% - 90%);
+  }
+
+  #upgrade button{
+    margin: 20px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: inherit;
+  }
+
+  #album{
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  /* riga nav centrale della pagina main */
+  .rowbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 90px 10px 90px;
+  }
+
+  /* riga dove sono presenti gli album */
+  .rowalbum{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* immagini degli album */
+  .imagealbum{
+    max-width: 150px;
+  }
+
+  /* colonna degli album */
+  .columnalbum{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px 10px 20px 10px
+  }
+
+  /************************************ player music *********************************/
+  section{
+    position: fixed;
+    bottom: 0;
+    padding: 25px;
+    background: #282828;
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  section img{
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .miniicons img{
+    width: 20px;
+    margin: 5px;
+  }
+
+  #playercentrale{
+    flex-grow: 2;
+  }
+
+  .barrariprod{
+    width: 40%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .barravol{
+    width: 90px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
-/* disporre elementi in column flex-start */
-.columnflex{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+/******************************************************** VERSIONE TABLET ****************************************************************************************************/
+@media all and (min-width: 769px) and (max-width: 991px) {
+  /* Classi o sezioni specifiche *****************************************/
+
+  /* disporre elementi in flex row */
+  .rowflex{
+    display: flex;
+  }
+
+  /* disporre elementi in column flex-start */
+  .columnflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /* disporre elementi in column flex-center */
+  .columncenter{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* disporre gli elementi al centro */
+  .centerflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* baseline flex */
+
+  .baselineflex{
+    align-items: baseline;
+  }
+
+  /* DEBUG:  */
+  .prova{
+    border: 2px solid red;
+  }
+
+  /************************************ ASIDE ***********************************/
+  aside{
+    background-color: black;
+    width: 250px;
+    padding: 25px;
+    height: 90vh;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  /* immagine del logo */
+
+  .imagelogo{
+    width: 145px;
+    padding-bottom: 10px;
+  }
+
+  ul li img{
+    width: 35px;
+    padding-right: 7px;
+  }
+
+  #titoloplaylist{
+    margin: 15px 0 15px 0;
+  }
+
+  #creaplay{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .pulsantecrea{
+    width: 37px;
+    height: 37px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 35px;
+    text-align: center;
+    line-height: 37px;
+    color: black;
+  }
+
+  #installapp{
+    border-bottom: 1px solid;
+  }
+
+  /********************************** MAIN *************************************/
+  main{
+    background: #141922;
+    width: 100vw;
+    overflow: scroll;
+  }
+
+  #upgrade{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: calc(100% - 250px);
+    height: calc(100% - 90%);
+  }
+
+  #upgrade button{
+    margin: 20px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: inherit;
+  }
+
+  #album{
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  /* riga nav centrale della pagina main */
+  .rowbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 90px 10px 90px;
+  }
+
+  /* riga dove sono presenti gli album */
+  .rowalbum{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* immagini degli album */
+  .imagealbum{
+    max-width: 150px;
+  }
+
+  /* colonna degli album */
+  .columnalbum{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px 10px 20px 10px
+  }
+
+  /************************************ player music *********************************/
+  section{
+    position: fixed;
+    bottom: 0;
+    padding: 25px;
+    background: #282828;
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  section img{
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .miniicons img{
+    width: 20px;
+    margin: 5px;
+  }
+
+  #playercentrale{
+    flex-grow: 2;
+  }
+
+  .barrariprod{
+    width: 40%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .barravol{
+    width: 90px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
-/* disporre elementi in column flex-center */
-.columncenter{
-  display: flex;
-  flex-direction: column;
-}
-
-/* disporre gli elementi al centro */
-.centerflex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* baseline flex */
-
-.baselineflex{
-  align-items: baseline;
-}
-
-/* DEBUG:  */
-.prova{
-  border: 2px solid red;
-}
-
-/************************************ ASIDE ***********************************/
-aside{
-  background-color: black;
-  width: 250px;
-  padding: 25px;
-  height: 90vh;
-  color: rgba(255, 255, 255, 0.4);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-shrink: 0;
-}
-
-/* immagine del logo */
-
-.imagelogo{
-  width: 145px;
-  padding-bottom: 10px;
-}
-
-ul li img{
-  width: 35px;
-  padding-right: 7px;
-}
-
-#titoloplaylist{
-  margin: 15px 0 15px 0;
-}
-
-#creaplay{
-  display: flex;
-  align-items: center;
-  margin: 10px;
-}
-
-.pulsantecrea{
-  width: 37px;
-  height: 37px;
-  margin-right: 10px;
-  background-color: rgba(255, 255, 255, 0.6);
-  font-size: 35px;
-  text-align: center;
-  line-height: 37px;
-  color: black;
-}
-
-#installapp{
-  border-bottom: 1px solid;
-}
-
-/********************************** MAIN *************************************/
-main{
-  background: #141922;
-  width: 100vw;
-  overflow: scroll;
-}
-
-#upgrade{
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: flex-end;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: calc(100% - 90%);
-}
-
-#upgrade button{
-  color: white;
-}
-
-#album{
-  margin-top: 120px;
-  margin-bottom: 120px;
-}
-
-/* riga nav centrale della pagina main */
-.rowbar{
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 90px 10px 90px;
-}
-
-/* riga dove sono presenti gli album */
-.rowalbum{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* immagini degli album */
-.imagealbum{
-  max-width: 150px;
-}
-
-/* colonna degli album */
-.columnalbum{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin: 20px 10px 20px 10px
-}
-
-/************************************ player music *********************************/
-section{
-  position: fixed;
-  bottom: 0;
-  padding: 25px;
-  background: #282828;
-  color: white;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-}
-
-section img{
-  width: 40px;
-  margin-right: 10px;
-}
-
-.miniicons img{
-  width: 20px;
-  margin: 5px;
-}
-
-#playercentrale{
-  flex-grow: 2;
-}
-
-.barrariprod{
-  width: 40%;
-  height: 4px;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.barravol{
-  width: 90px;
-  height: 4px;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.2);
+/******************************************************** VERSIONE MOBILE ****************************************************************************************************/
+@media all and (max-width: 768px){
 }
