@@ -31,15 +31,10 @@ h6, p{
 
 /* Classi o sezioni specifiche *****************************************/
 
-/* riga nav centrale della pagina main */
-.rowbar{
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 90px 10px 90px;
-}
+
 
 /* disporre elementi in flex row */
-.rowalbum{
+.rowflex{
   display: flex;
 }
 
@@ -61,26 +56,6 @@ h6, p{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* colonna degli album */
-.columnalbum{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-/* immagini degli album */
-.imagealbum{
-  width: 100px;
-}
-
-/* immagine del logo */
-
-.imagelogo{
-  width: 145px;
-  padding-bottom: 10px;
 }
 
 /* baseline flex */
@@ -105,6 +80,13 @@ aside{
   flex-direction: column;
   justify-content: space-between;
   flex-shrink: 0;
+}
+
+/* immagine del logo */
+
+.imagelogo{
+  width: 145px;
+  padding-bottom: 10px;
 }
 
 ul li img{
@@ -141,13 +123,52 @@ ul li img{
 main{
   background: #141922;
   width: 100vw;
-  padding: 25px;
+  overflow: scroll;
 }
 
 #upgrade{
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: calc(100% - 90%);
+}
+
+#upgrade button{
+}
+
+#album{
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+/* riga nav centrale della pagina main */
+.rowbar{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 90px 10px 90px;
+}
+
+/* riga dove sono presenti gli album */
+.rowalbum{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* immagini degli album */
+.imagealbum{
+  max-width: 150px;
+}
+
+/* colonna degli album */
+.columnalbum{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 20px 10px 20px 10px
 }
 
 /************************************ player music *********************************/
@@ -171,7 +192,7 @@ section img{
 }
 
 .miniicons img{
-  width: 30px;
+  width: 20px;
   margin: 5px;
 }
 
