@@ -22,6 +22,11 @@ h6, p{
   color: rgba(255, 255, 255, 0.4);
 }
 
+/* oscurare o nascondere un elemento */
+  .imagelogo .grande, .imagelogo .piccola{
+    display: none;
+  }
+
 /* contenitore generale */
 .container-flex{
   display: flex;
@@ -83,6 +88,10 @@ h6, p{
   }
 
   /* immagine del logo */
+
+  .imagelogo .grande{
+    display: block;
+  }
 
   .imagelogo{
     width: 145px;
@@ -260,6 +269,10 @@ h6, p{
 
   .baselineflex{
     align-items: baseline;
+  }
+
+  .imagelogo .grande{
+    display: block;
   }
 
   /* DEBUG:  */
@@ -460,9 +473,9 @@ h6, p{
     align-items: baseline;
   }
 
-/* oscurare o nascondere un elemento */
-  .hiddeobject{
-    visibility: hidden;
+  /* nascondi elmenti */
+  .nascondimobile{
+    display: none;
   }
 
   /* DEBUG:  */
@@ -473,8 +486,9 @@ h6, p{
   /************************************ ASIDE ***********************************/
   aside{
     background-color: black;
-    width: 250px;
-    padding: 25px;
+    width: 50px;
+    padding: 10px;
+    margin-bottom: 100px;
     height: 90vh;
     color: rgba(255, 255, 255, 0.4);
     display: flex;
@@ -485,14 +499,22 @@ h6, p{
 
   /* immagine del logo */
 
+  .imagelogo .piccola{
+    display: block;
+  }
+
   .imagelogo{
-    width: 145px;
-    padding-bottom: 10px;
+    width: 35px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+  }
+
+  ul li{
+    padding: 7px 7px 7px 0px
   }
 
   ul li img{
-    width: 35px;
-    padding-right: 7px;
+    width: 30px;
   }
 
   #titoloplaylist{
@@ -517,7 +539,6 @@ h6, p{
   }
 
   #installapp{
-    border-bottom: 1px solid;
   }
 
   /********************************** MAIN *************************************/
