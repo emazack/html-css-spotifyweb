@@ -22,6 +22,47 @@ h6, p{
   color: rgba(255, 255, 255, 0.4);
 }
 
+html{
+  overflow: hidden;
+  height: 100%;
+}
+
+/* immagine del album */
+
+.containerimg{
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.imagealbum{
+  max-width: 80%;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.playbutton{
+  display: block;
+}
+
+.containerimg:hover .overlay{
+  opacity: 1;
+}
+
+
 /* oscurare o nascondere un elemento */
   .imagelogo .grande, .imagelogo .piccola{
     display: none;
@@ -132,6 +173,7 @@ h6, p{
   main{
     background: #141922;
     width: 100vw;
+    height: 100vh;
     overflow: scroll;
   }
 
@@ -143,7 +185,7 @@ h6, p{
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.4);
     width: calc(100% - 250px);
-    height: calc(100% - 90%);
+    height: 100px;
   }
 
   #upgrade button{
@@ -176,11 +218,6 @@ h6, p{
   .rowalbum{
     display: flex;
     flex-wrap: wrap;
-  }
-
-  /* immagini degli album */
-  .imagealbum{
-    max-width: 80%;
   }
 
   /* colonna degli album */
@@ -345,7 +382,7 @@ h6, p{
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.4);
     width: calc(100% - 250px);
-    height: calc(100% - 90%);
+    height: 100px;
   }
 
   #upgrade button{
@@ -378,11 +415,6 @@ h6, p{
   .rowalbum{
     display: flex;
     flex-wrap: wrap;
-  }
-
-  /* immagini degli album */
-  .imagealbum{
-    max-width: 170px;
   }
 
   /* colonna degli album */
@@ -543,8 +575,8 @@ h6, p{
     display: flex;
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.4);
-    width: calc(100% - 250px);
-    height: calc(100% - 90%);
+    width: calc(100% - 50px);
+    height: 80px;
   }
 
   #upgrade button{
@@ -577,11 +609,6 @@ h6, p{
   .rowalbum{
     display: flex;
     flex-wrap: wrap;
-  }
-
-  /* immagini degli album */
-  .imagealbum{
-    max-width: 190px;
   }
 
   /* colonna degli album */
