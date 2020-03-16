@@ -27,6 +27,10 @@ html{
   height: 100%;
 }
 
+span img{
+  filter: invert(1);
+}
+
 /* immagine del album */
 
 .containerimg{
@@ -186,6 +190,7 @@ html{
     background-color: rgba(0, 0, 0, 0.4);
     width: calc(100% - 250px);
     height: 100px;
+    z-index: 1;
   }
 
   #upgrade button{
@@ -383,6 +388,7 @@ html{
     background-color: rgba(0, 0, 0, 0.4);
     width: calc(100% - 250px);
     height: 100px;
+    z-index: 1;
   }
 
   #upgrade button{
@@ -577,6 +583,7 @@ html{
     background-color: rgba(0, 0, 0, 0.4);
     width: calc(100% - 50px);
     height: 80px;
+    z-index: 1;
   }
 
   #upgrade button{
